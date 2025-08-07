@@ -22,7 +22,7 @@ def listar_usuarios():
     print("📋 Lista de Usuários:")
     for i, u in enumerate(usuarios):
         print(f"{i + 1}. Nome: {u['nome']}, Idade: {u['idade']}, E-mail: {u['email']}")
-    print()
+    print("Estes são os usuarios !")
 
 def remover_usuario():
     listar_usuarios()
