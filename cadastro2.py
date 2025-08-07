@@ -16,7 +16,7 @@ def cadastrar_usuario():
 
 def listar_usuarios():
     if not usuarios:
-        print("⚠️ Nenhum usuário cadastrado.\n")
+        print("Nenhum usuário cadastrado.\n")
         return
 
     print("📋 Lista de Usuários:")
@@ -33,11 +33,11 @@ def remover_usuario():
         indice = int(input("Digite o número do usuário que deseja remover: ")) - 1
         if 0 <= indice < len(usuarios):
             removido = usuarios.pop(indice)
-            print(f"🗑️ Usuário '{removido['nome']}' removido com sucesso!\n")
+            print(f"Usuário '{removido['nome']}' removido com sucesso!\n")
         else:
-            print("❌ Índice inválido.\n")
+            print("Índice inválido.\n")
     except ValueError:
-        print("❌ Entrada inválida. Digite um número.\n")
+        print("Entrada inválida. Digite um número.\n")
 
 def menu():
     while True:
@@ -56,10 +56,10 @@ def menu():
         elif opcao == "3":
             remover_usuario()
         elif opcao == "4":
-            print("👋 Encerrando o programa. Até mais!")
+            print("Encerrando o programa. Até mais!")
             break
         else:
-            print("❌ Opção inválida. Tente novamente.\n")
+            print("Opção inválida. Tente novamente.\n")
 
 # Inicia o programa
 menu()
